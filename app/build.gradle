@@ -36,6 +36,7 @@ android {
     }
     composeOptions {
         kotlinCompilerExtensionVersion compose_version
+        kotlinCompilerVersion '1.4.30'
     }
 }
 
@@ -57,6 +58,7 @@ dependencies {
     // Integration with observables
     implementation "androidx.compose.runtime:runtime-livedata:$compose_version"
     implementation "androidx.compose.runtime:runtime-rxjava2:$compose_version"
+    implementation "dev.chrisbanes.accompanist:accompanist-coil:0.6.0"
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
